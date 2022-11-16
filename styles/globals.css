@@ -148,7 +148,15 @@ nav ul li {
   font-size: 1rem;
   text-align: justify;
 }
-.partners {
+.games-card {
+  width: 90%;
+  padding: 2rem;
+  margin-top: 0.5em;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.games-list {
   padding-top: 5rem;
 }
 
