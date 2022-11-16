@@ -11,20 +11,6 @@ export default function Footer() {
         Copyright © {year} <Link href="/">Drunkiel</Link> - All rights reserved.
       </span>
       <ul className="flex">
-        {/* <li>
-          <a
-            href="https://www.facebook.com/blaiti"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image
-              src="/icons/facebook.svg"
-              width={24}
-              height={24}
-              alt="facebook-icon"
-            />
-          </a>
-        </li> */}
         <li>
           <a
             href="https://www.instagram.com/dru3kiel"

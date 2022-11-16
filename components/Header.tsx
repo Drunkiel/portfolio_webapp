@@ -8,9 +8,11 @@ export default function Header() {
       <NavBar />
       <div className="header flex light-bg">
         <div>
-          <button>Game developer</button>
-          <h1 className="white">Talk is cheap.</h1>
-          <h1 className="white">I create games, write code and paint pixel arts.</h1>
+          <button>Junior game developer</button>
+          <h1 className="white">
+            I create games, write code <br />
+            and paint pixel arts.
+          </h1>
           <p className="gray">
             I create games, write code and paint pixel arts.
           </p>
@@ -18,7 +20,13 @@ export default function Header() {
             Let&#39;s chat!
           </a> */}
         </div>
-        <Image src="/images/drunkiel.png" width={500} height={500} alt="drunkiel pixel art" className="pixel-art-image"/>
+        <Image
+          src="/images/drunkiel.png"
+          width={500}
+          height={500}
+          alt="drunkiel pixel art"
+          className="pixel-art-image"
+        />
       </div>
     </header>
   );
