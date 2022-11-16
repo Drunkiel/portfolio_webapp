@@ -1,5 +1,4 @@
 import React from "react";
-import { BiPalette } from "react-icons/bi";
 import Image, { StaticImageData } from "next/image";
 
 export default function About() {
@@ -36,8 +35,25 @@ export default function About() {
         </div>
       </div>
 
-      <div className="flex partners justify-space">
-        {/* Tutaj mają być tweety coś z api */}
+      <div className="flex games-list justify-space">
+        <GameCard
+          title="Microwave Tournament"
+          icon="/icons/web.svg"
+          description="Created web applications for my own purposes."
+          link="#"
+        />
+        <GameCard
+          title="Ala"
+          icon="/icons/web.svg"
+          description="Created web applications for my own purposes."
+          link="#"
+        />
+        <GameCard
+          title="Ala"
+          icon="/icons/web.svg"
+          description="Created web applications for my own purposes."
+          link="#"
+        />
       </div>
     </section>
   );
@@ -57,6 +73,28 @@ function AboutCard({ title, icon, description }: Props) {
         <Image src={icon} width={28} height={28} alt={title} />
       </div>
       <p className="white">{description}</p>
+    </div>
+  );
+}
+
+type GameCards = {
+  title: string;
+  icon: string | StaticImageData;
+  description: string;
+  link: string;
+};
+
+function GameCard({ title, icon, description, link }: GameCards) {
+  return (
+    <div className="light-bg about-card games-card">
+      <div className="justify-space">
+        <h3 className="blue">{title}</h3>
+        <Image src={icon} width={300} height={200} alt={title} />
+      </div>
+      <p className="white">{description}</p>
+      <button>
+        <a href={link}>Download</a>
+      </button>
     </div>
   );
 }
