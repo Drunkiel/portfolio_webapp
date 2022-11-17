@@ -25,12 +25,15 @@ export default function About() {
 
         <div className="flex-full about-text">
           <h5 className="gray">Introduce</h5>
-          <h1 className="white">Hello, I'm Jacob/Jakub Szenk</h1>
+          <h1 className="white">Hello, I'm Jakub</h1>
           <p className="gray">
-            I'm 18 years old and high school student, living in Poland.
+            I'm 18 years old guy. I attend a high school with a programming
+            profile. I am currently living in poland.
             <br />
             <br />
-            Coś do dodania
+            My interests revolve around computer games, creating them, testing
+            them, looking for bugs, etc. I have always been interested in this
+            and would like to develop myself in this direction.
           </p>
         </div>
       </div>
@@ -38,9 +41,9 @@ export default function About() {
       <div className="flex games-list justify-space">
         <GameCard
           title="Microwave Tournament"
-          icon="/icons/web.svg"
-          description="Created web applications for my own purposes."
-          link="#"
+          icon="/games_Icons/MicrowaveTournament.png"
+          description="Multiplayer game about microwaves. Inspired by game called Toasterball"
+          link="https://drunkiel.itch.io/microwave-tournament"
         />
         <GameCard
           title="Ala"
@@ -89,7 +92,13 @@ function GameCard({ title, icon, description, link }: GameCards) {
     <div className="light-bg about-card games-card">
       <div className="justify-space">
         <h3 className="blue">{title}</h3>
-        <Image src={icon} width={300} height={200} alt={title} />
+        <Image
+          src={icon}
+          width={250}
+          height={250}
+          alt={title}
+          className="image"
+        />
       </div>
       <p className="white">{description}</p>
       <button>

@@ -13,19 +13,14 @@ export default function Header() {
             I create games, write code <br />
             and paint pixel arts.
           </h1>
-          <p className="gray">
-            I create games, write code and paint pixel arts.
-          </p>
-          {/* <a className="green" href="mailto:contact@blaiti.com">
-            Let&#39;s chat!
-          </a> */}
+          <p className="gray">Looking for some inspiration.</p>
         </div>
         <Image
           src="/images/drunkiel.png"
           width={500}
           height={500}
           alt="drunkiel pixel art"
-          className="pixel-art-image"
+          className="image"
         />
       </div>
     </header>
