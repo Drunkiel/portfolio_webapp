@@ -6,11 +6,25 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="light-bg flex justify-space">
+    <footer id="contact" className="light-bg flex justify-space">
       <span className="white">
         Copyright © {year} <Link href="/">Drunkiel</Link> - All rights reserved.
       </span>
       <ul className="flex">
+        <li>
+          <a
+            href="mailto:drunkielfel@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="/icons/gmail.svg"
+              width={24}
+              height={24}
+              alt="gmail-icon"
+            />
+          </a>
+        </li>
         <li>
           <a
             href="https://www.instagram.com/dru3kiel"

@@ -149,7 +149,7 @@ nav ul li {
   text-align: justify;
 }
 .games-card {
-  width: 90%;
+  width: 25%;
   padding: 2rem;
   margin-top: 0.5em;
   margin-right: 1rem;
@@ -161,6 +161,9 @@ nav ul li {
 }
 .games-list {
   padding-top: 5rem;
+}
+.center {
+  text-align: center;
 }
 
 /* Footer */
@@ -207,6 +210,13 @@ footer ul li {
     width: 100%;
   }
   .about-card div {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  .games-card {
+    width: 100%;
+  }
+  .games-card div {
     flex-direction: row !important;
     justify-content: space-between !important;
   }

@@ -7,19 +7,19 @@ export default function About() {
       <div className="flex">
         <div className="flex-full">
           <AboutCard
-            title="Pixel art artist"
-            icon="/icons/paint.svg"
-            description="I like to draw pixel arts for my games and not only."
-          />
-          <AboutCard
             title="Game developer"
             icon="/icons/code.svg"
-            description="For now I developed 1 published and around 4 never finished games."
+            description="For now I developed and published one game called MicrowaveTournament."
           />
           <AboutCard
             title="Web applications"
             icon="/icons/web.svg"
             description="Created web applications for my own purposes."
+          />
+          <AboutCard
+            title="Pixel art artist"
+            icon="/icons/paint.svg"
+            description="I like to draw pixel arts for my games and not only."
           />
         </div>
 
@@ -27,36 +27,27 @@ export default function About() {
           <h5 className="gray">Introduce</h5>
           <h1 className="white">Hello, I'm Jakub</h1>
           <p className="gray">
-            I'm 18 years old guy. I attend a high school with a programming
-            profile. I am currently living in poland.
+            I'm 18 years old. I attend a high school with a programming profile.
+            I am currently living in poland.
             <br />
             <br />
-            My interests revolve around computer games, creating them, testing
-            them, looking for bugs, etc. I have always been interested in this
-            and would like to develop myself in this direction.
+            My interests revolve around computer games, creating games, testing
+            them, etc. I have always been interested in this and would like to
+            develop myself in this direction.
           </p>
         </div>
       </div>
 
-      <div className="flex games-list justify-space">
-        <GameCard
-          title="Microwave Tournament"
-          icon="/games_Icons/MicrowaveTournament.png"
-          description="Multiplayer game about microwaves. Inspired by game called Toasterball"
-          link="https://drunkiel.itch.io/microwave-tournament"
-        />
-        <GameCard
-          title="Ala"
-          icon="/icons/web.svg"
-          description="Created web applications for my own purposes."
-          link="#"
-        />
-        <GameCard
-          title="Ala"
-          icon="/icons/web.svg"
-          description="Created web applications for my own purposes."
-          link="#"
-        />
+      <div id="games" className="games-list">
+        <h1 className="white center">Games I've made:</h1>
+        <div className="flex justify-space">
+          <GameCard
+            title="Microwave Tournament"
+            icon="/games_Icons/MicrowaveTournament.png"
+            description="Multiplayer game about microwaves. Inspired by game called Toasterball"
+            link="https://drunkiel.itch.io/microwave-tournament"
+          />
+        </div>
       </div>
     </section>
   );
@@ -102,7 +93,9 @@ function GameCard({ title, icon, description, link }: GameCards) {
       </div>
       <p className="white">{description}</p>
       <button>
-        <a href={link}>Download</a>
+        <a href={link} target="_blank">
+          More
+        </a>
       </button>
     </div>
   );

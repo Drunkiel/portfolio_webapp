@@ -13,7 +13,9 @@ export default function Header() {
             I create games, write code <br />
             and paint pixel arts.
           </h1>
-          <p className="gray">Looking for some inspiration.</p>
+          <p className="gray">
+            I may not be the best, but for that I am not the worst
+          </p>
         </div>
         <Image
           src="/images/drunkiel.png"
