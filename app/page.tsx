@@ -1,4 +1,4 @@
-import Blog from "@/components/Blog";
+import Games from "@/components/Games";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Hero from "@/components/Hero";
 import { Inter } from "@next/font/google";
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <ScrollUp />
       <Hero />
-      <Blog />
+      <Games />
     </>
   );
 }

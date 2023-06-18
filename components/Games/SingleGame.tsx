@@ -1,9 +1,9 @@
-import { Blog } from "@/types/blog";
+import { Game } from "@/types/game";
 import Image from "next/image";
 import Link from "next/link";
 
-const SingleBlog = ({ blog }: { blog: Blog }) => {
-  const { title, image, paragraph, link, publishDate } = blog;
+const SingleGame = ({ game }: { game: Game }) => {
+  const { title, price, image, paragraph, link, publishDate } = game;
   return (
     <>
       <div
@@ -32,6 +32,12 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
               </h4>
               <p className="text-xs text-body-color">{publishDate}</p>
             </div>
+            <div className="ml-10 inline-block">
+              <h4 className=" mb-1 text-sm font-medium text-dark dark:text-white">
+                Price:
+              </h4>
+              <p className="text-xs text-body-color">{price}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -39,4 +45,4 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
   );
 };
 
-export default SingleBlog;
+export default SingleGame;

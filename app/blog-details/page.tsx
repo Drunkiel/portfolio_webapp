@@ -1,4 +1,4 @@
-import SharePost from "@/components/Blog/SharePost";
+import SharePost from "@/components/Games/SharePost";
 import TagButton from "@/components/Blog/TagButton";
 import Image from "next/image";
 
