@@ -5,7 +5,7 @@ const gamesData: Game[] = [
     id: 1,
     title: "Microwave Tournament",
     price: "Free",
-    paragraph: "A 'little' buggy game about the competition of microwaves.",
+    paragraph: "A 'little' bugged game about the competition of microwaves.",
     link: "https://drunkiel.itch.io/microwave-tournament",
     image: "/images/games/MicrowaveTournament_Icon.png",
     publishDate: "Aug 25, 2022",

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import socialData from "./socialData";
 
 const Hero = () => {
   return (
@@ -25,18 +26,15 @@ const Hero = () => {
                   direction.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="https://github.com/Drunkiel"
-                    className="rounded-md bg-black/20 py-4 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
-                  >
-                    My GitHub
-                  </Link>
-                  <Link
-                    href="https://drunkiel.itch.io"
-                    className="rounded-md bg-black/20 py-4 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
-                  >
-                    Itch.io profile
-                  </Link>
+                  {socialData.map((social) => (
+                    <Link
+                      key={social.id}
+                      href={social.link}
+                      className="rounded-md bg-black/20 py-4 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
+                    >
+                      {social.text}
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
