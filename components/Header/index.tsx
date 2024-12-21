@@ -1,8 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import ThemeToggler from "./ThemeToggler";
+import { SetStateAction, useEffect, useState } from "react";
 import menuData from "./menuData";
 
 const Header = () => {
@@ -27,7 +26,7 @@ const Header = () => {
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index) => {
+  const handleSubmenu = (index: SetStateAction<number>) => {
     if (openIndex === index) {
       setOpenIndex(-1);
     } else {

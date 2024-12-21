@@ -1,5 +1,5 @@
 {
-  "name": "Drunkiel's website",
+  "name": "drunkiel's-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/font": "13.1.6",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",
-    "next": "13.1.6",
+    "next": "^15.1.2",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,10 +22,25 @@
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.34",
     "autoprefixer": "^10.4.13",
+    "nodemon": "^3.1.9",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.2",
     "tailwindcss": "^3.2.4",
+    "ts-node": "^10.9.2",
     "typescript": "^5.0.4"
-  }
+  },
+  "description": "",
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drunkiel/portfolio_webapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Drunkiel/portfolio_webapp/issues"
+  },
+  "homepage": "https://github.com/Drunkiel/portfolio_webapp#readme"
 }

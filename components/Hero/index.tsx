@@ -16,14 +16,16 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Hello!
+                  Welcome!
                 </h1>
                 <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                  My name is Jakub, I'm 18 years old and live in Poland. I
-                  attend to a high school with a programming profile. My
-                  interests revolve games and creating them. I have always been
-                  interested in this and would like to develop myself in this
-                  direction.
+                  Hi! My name is Jakub (Jacob), I’m {new Date().getFullYear() - 2004} years old, and I’m passionate about creating video games. I graduated from a technical school with a focus on programming, and now I work on developing games that I would love to play myself. My work is not only my passion, but also a way for me to continuously improve my skills in game development and programming.
+                  <br></br>
+                  <br></br>
+                  In my free time, I enjoy playing various video games, which help me unwind and also provide inspiration for my own projects. I’m always looking for ways to make my games as engaging as possible and to give players the same fun I get when playing.
+                  <br></br>
+                  <br></br>
+                  If you're interested in the world of games and technology, feel free to check out my projects!
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   {socialData.map((social) => (

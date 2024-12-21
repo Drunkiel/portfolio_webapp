@@ -2,7 +2,27 @@ import { Game } from "@/types/game";
 
 const gamesData: Game[] = [
   {
+    id: 0,
+    title: "Project N",
+    price: "Free",
+    paragraph:
+      "This game will be based mainly on telling a story about a world threatened by a wizard corrupted by dark magic",
+    link: "/",
+    image: "/images/games/Crystalside_Icon.png",
+    publishDate: "Unknown",
+  },
+  {
     id: 1,
+    title: "Panda's sushi restaurant",
+    price: "Free",
+    paragraph:
+      "Restaurant is a game in which you can fulfill your dream of running a sushi restaurant.",
+    link: "https://drunkiel.itch.io/restaurant",
+    image: "/images/games/Restaurant.png",
+    publishDate: "Unknown",
+  },
+  {
+    id: 2,
     title: "Microwave Tournament",
     price: "Free",
     paragraph: "A 'little' bugged game about the competition of microwaves.",
@@ -11,21 +31,21 @@ const gamesData: Game[] = [
     publishDate: "Aug 25, 2022",
   },
   {
-    id: 2,
+    id: 3,
     title: "Crystalside",
     price: "Free",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Game about exploring planets and collecting rocks.",
     link: "/",
     image: "/images/games/Crystalside_Icon.png",
-    publishDate: "Not published yet",
+    publishDate: "Cancelled",
   },
   {
-    id: 3,
+    id: 4,
     title: "Snake game",
     price: "Free",
     paragraph: "Open sourced game, requires rust-lang installed to play.",
-    link: "/",
+    link: "https://github.com/Drunkiel/Snake-game-rust",
     image: "/images/games/Crystalside_Icon.png",
     publishDate: "May 15, 2023",
   },
