@@ -1,4 +1,8 @@
 import { Game } from "@/types/game";
+import getConfig from "next/config";
+import { config } from "process";
+
+const path: String = "/portfolio_webapp";
 
 const gamesData: Game[] = [
   {
@@ -8,7 +12,7 @@ const gamesData: Game[] = [
     paragraph:
       "This game will be based mainly on telling a story about a world threatened by a wizard corrupted by dark magic",
     link: "/",
-    image: "/images/games/Crystalside_Icon.png",
+    image: path + "/images/games/Crystalside_Icon.png",
     publishDate: "Unknown",
   },
   {
@@ -18,7 +22,7 @@ const gamesData: Game[] = [
     paragraph:
       "Restaurant is a game in which you can fulfill your dream of running a sushi restaurant.",
     link: "https://drunkiel.itch.io/restaurant",
-    image: "/images/games/Restaurant.png",
+    image: path + "/images/games/Restaurant.png",
     publishDate: "Unknown",
   },
   {
@@ -27,7 +31,7 @@ const gamesData: Game[] = [
     price: "Free",
     paragraph: "A 'little' bugged game about the competition of microwaves.",
     link: "https://drunkiel.itch.io/microwave-tournament",
-    image: "/images/games/MicrowaveTournament_Icon.png",
+    image: path + "/images/games/MicrowaveTournament_Icon.png",
     publishDate: "Aug 25, 2022",
   },
   {
@@ -37,7 +41,7 @@ const gamesData: Game[] = [
     paragraph:
       "Game about exploring planets and collecting rocks.",
     link: "/",
-    image: "/images/games/Crystalside_Icon.png",
+    image: path + "/images/games/Crystalside_Icon.png",
     publishDate: "Cancelled",
   },
   {
@@ -46,7 +50,7 @@ const gamesData: Game[] = [
     price: "Free",
     paragraph: "Open sourced game, requires rust-lang installed to play.",
     link: "https://github.com/Drunkiel/Snake-game-rust",
-    image: "/images/games/Crystalside_Icon.png",
+    image: path + "/images/games/Crystalside_Icon.png",
     publishDate: "May 15, 2023",
   },
 ];

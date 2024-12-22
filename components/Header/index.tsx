@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SetStateAction, useEffect, useState } from "react";
 import menuData from "./menuData";
+import { config } from "process";
 
 const Header = () => {
   // Navbar toggle
@@ -53,7 +54,7 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/logo.png"
+                  src="/portfolio_webapp/images/logo/logo.png"
                   alt="logo"
                   width={140}
                   height={30}

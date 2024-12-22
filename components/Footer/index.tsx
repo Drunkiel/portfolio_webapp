@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-2 inline-block">
                   <Image
-                    src="/images/logo/logo.png"
+                    src="/portfolio_webapp/images/logo/logo.png"
                     alt="logo"
                     width={140}
                     height={30}
