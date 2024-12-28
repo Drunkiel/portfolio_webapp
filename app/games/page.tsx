@@ -22,9 +22,10 @@ const Games = () => {
   }
 
   // Calculate start and end indices based on currentPage
+  const reversedData = [...gameData].reverse();
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentData = gameData.slice(startIndex, endIndex);
+  const currentData = reversedData.slice(startIndex, endIndex);
 
   return (
     <>

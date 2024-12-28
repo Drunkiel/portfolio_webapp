@@ -2,6 +2,7 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Head from "@/app/head";
 import ScrollToTop from "@/components/ScrollToTop";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
@@ -17,6 +18,7 @@ export default function RootLayout({
 
       <body className="dark:bg-black">
         <Providers>
+          <Head />
           <Header />
           {children}
           <Footer />

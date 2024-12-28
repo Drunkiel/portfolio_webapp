@@ -6,7 +6,6 @@ export default function Head() {
       <meta name="author" content="Drunkiel" />
       <meta name="keywords" content="Junior, Game developer, Games" />
       <meta name="description" content="Junior game developer" />
-      <link rel="icon" href="/images/logo/code.svg" />
     </>
   );
 }
